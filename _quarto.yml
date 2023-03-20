@@ -6,22 +6,17 @@ lang: zh
 
 
 book:
-  title: "科研工具介绍"
+  title: "概率论讲义"
   author: "张鑫"
   date: "1/8/2023"
   
   chapters:
     - index.qmd
-    - MacSettings.qmd
-    - git.qmd
-    - link.qmd
-    - prob.qmd
-    - Routers.qmd
-    - summary.qmd
-    - references.qmd
+    - chap1.qmd
+    - chap2.qmd
+    - ref.qmd
     
-  site-url: https://macset.xzhang.ink/
-  ##style: "docked"
+  site-url: https://prob.xzhang.ink/
   downloads: [pdf]
   sharing: [twitter,facebook]
   page-navigation: true
@@ -29,7 +24,7 @@ book:
   sidebar:
     ## collapse-level: 1
     search: true
-    title: false
+    title: false 
     ## logo: "images/openscapes_hex.png"
     pinned: true
     align: center
@@ -39,7 +34,7 @@ book:
         href: https://www.xzhang.ink
         text: "xzhang.ink"
       - icon: github
-        href: https://github.com/xinzhangseu/macsoftset
+        href: https://github.com/xinzhangseu/Prob-2023
         ## text: "Quarto website tutorial"
       - icon: twitter
         href: https://twitter.com/xzhangnj
@@ -69,11 +64,14 @@ format:
       body-width: 900px
       margin-width: 260px
       gutter-width: 1.5rem
-    css: style.css
     crossref:
       chapters: true
       eq-prefix: ""
-    number-depth: 3
+    #number-depth: 2
+    toc: true
+    toc-depth: 6
+    toc-location: left
+    self-contained: true
 
   pdf:
     documentclass: elegantbook
